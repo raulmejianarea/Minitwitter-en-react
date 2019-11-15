@@ -1,0 +1,462 @@
+.image-logo {
+  position: relative;
+  margin-left: 38rem;
+}
+/* css user card */
+/* Css barra de navegacion */
+body {
+	background: #e6ecf0;
+	padding-top: 49px;
+}
+
+.top-nav {
+	background: #fff;
+	border-bottom: 2px solid #ddd;
+	max-height: 52.9px;
+	overflow: hidden;
+}
+.top-nav ul li {
+	float: left;
+	padding: 13px 16px;
+	color: #aaa;
+	font-weight: bold;
+}
+.top-nav ul li i {
+	font-size: 19px;
+	margin-right: 7px;
+}
+.top-nav ul li:hover {
+	color: #1DA1F2;
+	cursor: pointer;
+	border-bottom: 3px solid #1DA1F2;
+}
+.top-nav .logo {
+	color: #1DA1F2;
+	font-size: 30px;
+	margin-top: 3px;
+}
+.top-nav .nav-right {
+    margin:0rem;
+}
+.Container{
+    margin: 0;
+    position: relative;
+}
+.twitter{
+	color: #1DA1F2;
+	padding-left: 11rem;
+	padding-right: 14rem;
+	
+	
+}
+
+
+.twitter li > button {
+    font-size: 0.8em;
+    border: 0;
+    background: rgba(85, 172, 238, 1);
+    color: #fff;
+    border-radius: 100px;
+  }
+  .cover {
+	height: 300px;
+	overflow: hidden;
+	background: #1DA1F2;
+	background-image: url("https://pbs.twimg.com/profile_banners/4894389609/1536243903/1080x360");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	box-shadow: -1px -2px 1px 2px #0000001a inset;
+}
+
+/* barra de navegacion del perfil */
+.main-nav {
+	padding-top: 10px;
+	background: #fff;
+	height: 58.5px;
+	margin-bottom: 15px;
+	box-shadow: 0px 3px 0px 0px #c7bfbf4a;
+}
+.main-nav .profile-avatar {
+	background: #fff;
+	border: 5px solid #fff;
+	border-radius: 50%;
+	height: 200px;
+	position: absolute;
+	width: 200px;
+	overflow: hidden;
+	top: -119px;
+	z-index: 999;
+}
+.profile-avatar img {
+	width: 100%;
+	height: 100%;
+}
+.main-nav .num li {
+	padding: 0 14px;
+	font-weight: bold;
+	display: inline-block;
+	line-height: 24px;
+	text-align: center;
+}
+.main-nav .num li:hover {
+	border-bottom: 3px solid #1DA1F2;
+}
+.main-nav .num li.active {
+	border-bottom: 3px solid #1DA1F2;
+}
+.main-nav .num li a {
+	text-decoration: none;
+	color: #657786;
+}
+.main-nav .num li:hover span {
+	color: #1DA1F2;
+}
+.num li.active span {
+	color: #1DA1F2;
+}
+.main-nav .num li span {
+	display: block;
+	font-weight: 700;
+	font-size: 19px;
+	letter-spacing: 1px;
+}
+.main-nav .edit {
+	padding: 5px 17px;
+	border-radius: 20px;
+	font-size: 1.2em;
+	background: transparent;
+	border: 2px solid #aaa;
+	float: right;
+	font-weight: 500;
+	outline: 0;
+}
+.edit:hover {
+	background: #dddddd87;
+	border: 3px solid #e0ddddde;
+}
+.listnum{
+	list-style: none;
+    margin-left: 14rem;
+}
+
+/* card profile */
+
+.twitter-card{
+	width: 400px;
+	height: 300px;
+	border: 1px solid var(--light-grey);
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	background: var(--white);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .row-top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1.2rem;
+  }
+  
+  .profile-user > * {
+	display: block;
+  }
+  
+  .user-wrapper{
+	display: flex;
+	align-items: center; 
+  }
+  
+  
+  
+  .follow:hover{
+	background-color: var(--twitter-blue);
+	color: var(--white);
+  }
+  
+  .user{
+	font-size: 2rem;
+	color:black;
+	font-weight: bold;
+  }
+  
+  .username{
+	font-size: 0.9rem;
+	color: var(--grey);
+  }
+  
+  .profile-bio{
+	width: 90%;
+	margin-bottom: 1rem;
+  }
+  
+  .row-middle{
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .profile-location{
+	font-size: var(--font-small);
+	color: var(--grey);
+	margin-bottom: 2px;
+  }
+  
+  .profile-location > i, .profile-website > i {
+	 font-size: 1rem;
+	 color: var(--grey);
+	 margin-right: 5px;
+  }
+  
+  .profile-website > i{
+	margin-right: 2px;
+  }
+  
+  .profile-website{
+	margin-bottom: 1.2rem;
+  }
+  
+  .profile-website > a{
+	text-decoration: none;
+	font-size: var(--font-small);
+	color: var(--twitter-blue);
+  }
+  
+  .row-bottom{
+	border-top: 1px solid #ccc;
+	padding-top: 1rem;
+	display: flex;
+	justify-content: flex-start;
+  }
+  
+  .row-bottom > *:not(:first-child) {
+	padding-left: 6rem;
+  }
+  
+  .followers-count, .following-count, .likes-count{
+	color: var(--grey);
+  }
+  
+  .count-meta{
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 5px;
+	color: var(--black);
+  }
+/* Card post */
+.Card-Profile{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+}
+.posts {
+	display: flex;
+	width: 600px;
+	height: 300px;
+	border: 1px solid var(--light-grey);
+	border-radius: 6px;
+	flex-direction: column;
+	margin-left: 1rem;
+	background: var(--white);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.post {
+	background: #fff;
+	border-bottom: .5px solid #d0cfcfcc;
+}
+.post:hover {
+	background: #f5f8fa;
+	cursor: pointer;
+}
+.post-head {
+	border-bottom: .2px solid #7f7979fc;
+}
+.post-head ul {
+	margin-bottom: 0;
+}
+.posts .post-head li {
+	display: inline-block;
+	padding: 17px 12px 10px 12px;
+	margin: 0;
+	font-weight: bold;
+}
+.posts .post-head li a.active {
+	color: #000;
+	text-decoration: none;
+}
+.posts .post-body .row {
+	margin: 0;
+}
+.post-body .z {
+	padding: 0;
+}
+.post-body .avatar img {
+	width: 50px;
+	height: 50px;
+	margin: 15px 20px 0px 20px;
+}
+.post .content {
+	padding: 8px 0px 8px 8px;
+}
+.post .content .name,
+.name a {
+	margin-bottom: 6px;
+	font-size: 14px;
+	color: #657786
+}
+.name:hover .user {
+	text-decoration: underline;
+	color: #1da1f2;
+}
+.name .user {
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+}
+.posts .post-content {
+	font-size: 13px;
+	font-weight: lighter;
+	line-height: 19px;
+}
+.post-content h2 {
+	margin: 2px 0;
+}
+.post-content .image {
+	width: 95%;
+	height: 340px;
+	overflow: hidden;
+	border-radius: 6px;
+}
+.post-content .image img {
+	width: 100%;
+	height: 100%;
+}
+.icons li {
+	float: left;
+	margin: 0px 10px 5px 10px;
+	font-size: 16px;
+}
+.icons li a {
+	color: #657786;
+	font-size: 13px;
+}
+.icons li a i {
+	margin-right: 8px;
+	color: #657786;
+	font-size: 15px;
+	font-weight: bold;
+}
+/*css user card */
+.profile-card{
+  font-size: 75%;
+  width: 290px;
+  height: 220px;
+  background-color: white;
+  border: 1px solid darkgray;
+  border-radius: 6%;
+}
+.profile-card__name--link{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+}
+.profile-card__username--link{
+  font-size: 14px;
+  color:darkgrey;
+}
+.profile-card__background{
+  display: block;
+  height: 100px;
+  background-image: url('https://pbs.twimg.com/profile_banners/169319552/1461530440/600x200');
+  background-size: cover;
+  background-position: top;
+	border-radius: 6px 6px 0 0;
+}
+.profile-card__content{
+  padding: 8px 10px;
+	position: relative;
+}
+.profile-card__stat--list{
+  padding: 0;
+  list-style-type: none;
+	margin: 0;
+}
+.profile-card__avatar{
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  left: 8px;
+  position: absolute;
+  border-radius: 60px;
+  border: 2px solid white;
+  background-image: url('https://pbs.twimg.com/media/BqxQ4GnIYAA4D4N.jpg');
+	background-size: cover;
+}
+.profile-card__user{
+	padding-left: 80px;
+}
+.profile-card__stat--link{
+	color: inherit;
+	text-decoration: none;
+}
+.profile-card__label{
+	color: blue;
+}
+.profile-card__stat--list{
+  display: flex;
+	padding: 9px 0;
+}
+.profile-card__stat{
+  flex: 1;
+	color: black;
+}
+.profile-card__label{
+  color: blue;
+  font-size: 10px;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+	display: block;
+}
+.profile-card__value{
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+	padding-top: 3px
+}
+/* Css Tweet input feed */
+.container-tweetinput{
+	font-size: 75%;
+  width: 380px;
+  height: 148px;
+  background-color: white;
+  border: 1px solid darkgray;
+	border-radius: 0%;
+	margin-left: 1rem;
+	margin-top: -4.5rem;
+}
+
+.new-tweet-input{
+  width: 100%;
+  height: 100px;
+  padding-left: 5px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.btn-tweet{
+	margin-top: 6px;
+	background-color: blue;
+	 color: #fafafa;
+	 font-size: 16px;
+	 float: right;
+	 border: none;
+	 padding: 7px 14px;
+	 border-radius: 5px;
+	 cursor: pointer;
+ }
